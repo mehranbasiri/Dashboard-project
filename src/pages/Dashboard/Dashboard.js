@@ -1,8 +1,8 @@
 import React from "react";
 import css from "./Dashboard.module.css";
 import { cardsData, groupNumber } from "../../data";
+import Statistics from "../../components/statistics/Statistics";
 const Dashboard = () => {
-  
   return (
     <div className={css.container}>
       {/* left side */}
@@ -30,10 +30,12 @@ const Dashboard = () => {
                   <span>{groupNumber(card.amount)}</span>
                 </div>
               </div>
-          ))}
+            ))}
           </div>
         </div>
-      </div>
+        </div>
+        <Statistics />
+       
       {/* right side */}
       <div className={css.orders}>orders</div>
     </div>
