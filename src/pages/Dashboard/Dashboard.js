@@ -2,12 +2,15 @@ import React from "react";
 import css from "./Dashboard.module.css";
 import { cardsData, groupNumber } from "../../data";
 import Statistics from "../../components/statistics/Statistics";
+
+import Order from "../../components/Orders/Order";
 const Dashboard = () => {
   return (
+    // <div className="dashboard-items">
     <div className={css.container}>
       {/* left side */}
-      <div className={`${css.dashboard} theme-container`}>
-        <div className={css.dashboardHead}>
+      <div className={css.dashboard}>
+        <div className={`${css.dashboardHead} theme-container`}>
           <div className={css.head}>
             <span>Dashboard</span>
             <div className={css.durationButton}>
@@ -33,11 +36,13 @@ const Dashboard = () => {
             ))}
           </div>
         </div>
-        </div>
+
         <Statistics />
-       
+      </div>
       {/* right side */}
-      <div className={css.orders}>orders</div>
+      
+        <Order />
+      
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import ReactEcharts from "echarts-for-react";
 import * as echarts from "echarts";
-import css from "./Statistics.module.css";
+
 const StatisticsChart = () => {
   const option = {
     color: [`var(--orange)`],
