@@ -90,7 +90,7 @@ const BoardPage = () => {
           const handleCardAdd = (title, detail) => {
             const card = {
               id: new Date().getTime(),
-              source: title,
+              title,
               description: detail,
             };
             const updatedBoard = addCard(board, props, card);
