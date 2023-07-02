@@ -14,7 +14,7 @@ const Sidebar = () => {
         <NavLink to="dashboard" className={css.item} title={"Dashboard"}>
           <MdSpaceDashboard size={30} />
         </NavLink>
-        <NavLink to="celendar" className={css.item} title={"celendar"}>
+        <NavLink to="calendar" className={css.item} title={"celendar"}>
           <AiFillCalendar size={30} />
         </NavLink>
         <NavLink to="board" className={css.item} title={"Trello Board"}>
